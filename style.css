@@ -1,0 +1,108 @@
+/* Font modern dhe reset bazik */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Background modern me gradient qielli */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+
+  /* Gradient i inspiruar nga qielli */
+  background: linear-gradient(135deg, #74b9ff, #4499d1, #0a449b);
+  background-size: 200% 200%;
+  animation: skyMove 15s ease infinite;
+}
+
+/* Animacion për ta bërë background-in të gjallë */
+@keyframes skyMove {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+/* Kuti qendrore */
+.container {
+  width: 380px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Titulli */
+h1 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Input modern */
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Butoni */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #0984e3;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #74b9ff;
+}
+
+/* Karta e motit */
+.card {
+  margin-top: 25px;
+  padding: 20px;
+  background: rgba(94, 146, 206, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(105, 179, 221, 0.15);
+  color: #2d3436;
+  transition: 0.3s ease;
+}
+
+.card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 1.2rem;
+  margin: 6px 0;
+}
+
+.card small {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.hidden {
+  display: none;
+}
